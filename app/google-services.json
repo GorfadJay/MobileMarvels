@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "426328361166",
+    "project_id": "online-mobile-store-d9527",
+    "storage_bucket": "online-mobile-store-d9527.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426328361166:android:8dd1baa3942589c1fa289f",
+        "android_client_info": {
+          "package_name": "com.example.mobilemarvel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7dfYA_unc1DlAjcWYJGzN6XesS2moIKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

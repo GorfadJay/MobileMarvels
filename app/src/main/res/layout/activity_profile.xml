@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="355dp">
+
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/backarrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/backarrow"
+                android:layout_marginTop="15sp"
+                android:layout_marginLeft="8sp"/>
+
+            <ImageView
+                android:id="@+id/imgprofile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="85sp"
+                android:background="@drawable/noprofile"/>
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25sp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/imgprofile"
+                android:hint="Loading..."/>
+
+            <TextView
+                android:id="@+id/txtnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/txtname"
+                android:hint="Loading..."/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/iconprofile"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10sp"
+                android:src="@drawable/profileicon"/>
+
+            <TextView
+                android:id="@+id/editprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:layout_toEndOf="@+id/iconprofile"
+                android:textSize="20sp"
+                android:layout_marginLeft="25sp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/editprofiledetail"
+                android:layout_width="20sp"
+                android:layout_height="18sp"
+                android:src="@drawable/editdetailsicon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/iconaddress"
+                android:layout_width="34dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5sp"
+                android:src="@drawable/addressicon"/>
+
+            <TextView
+                android:id="@+id/editaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_toEndOf="@+id/iconaddress"
+                android:textSize="20sp"
+                android:layout_marginLeft="27sp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/editaddressdetail"
+                android:layout_width="20sp"
+                android:layout_height="18sp"
+                android:src="@drawable/editdetailsicon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/iconlogout"
+                android:layout_width="24dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="11sp"
+                android:src="@drawable/logouticon"/>
+
+            <TextView
+                android:id="@+id/editlogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_toEndOf="@+id/iconlogout"
+                android:textSize="20sp"
+                android:layout_marginLeft="29sp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/editlogoutdetail"
+                android:layout_width="20sp"
+                android:layout_height="18sp"
+                android:src="@drawable/editdetailsicon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10sp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnView"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_view"/>
+
+</RelativeLayout>

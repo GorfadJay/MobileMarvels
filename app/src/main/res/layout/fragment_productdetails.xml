@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".productdetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="35sp"
+                android:layout_marginTop="30sp"
+                android:src="@drawable/backarrow"/>
+
+
+            <ImageView
+                android:layout_width="290dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="28sp"
+                android:layout_marginLeft="60sp"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="iPhone 15 Pro"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="22sp"
+                android:layout_marginTop="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="__________________________________________________________"
+                android:layout_marginLeft="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="23sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADVANCED DISPLAY — The 6.1” Super Retina XDR display with ProMotion ramps up refresh rates to 120Hz"
+                android:layout_marginLeft="23sp"
+                android:layout_marginTop="7sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtsize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:layout_marginLeft="23sp"
+                        android:layout_marginTop="8sp"/>
+
+                    <TextView
+                        android:id="@+id/txtsizedef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="128 GB"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="23sp"
+                        android:layout_marginTop="44sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Color"
+                        android:layout_toEndOf="@+id/txtsize"
+                        android:layout_marginLeft="170sp"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:layout_marginTop="8sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Define Colors"
+                        android:layout_marginLeft="161sp"
+                        android:textSize="17sp"
+                        android:layout_toEndOf="@+id/txtsizedef"
+                        android:layout_marginTop="44sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtquantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:layout_marginLeft="23sp"
+                    android:layout_marginTop="30sp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_toEndOf="@+id/txtquantity"
+                    android:layout_width="45sp"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginLeft="190sp"
+                    android:text="+"
+                    android:textSize="30sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="270sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="28sp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnminus"
+                    android:layout_toEndOf="@+id/txtquantity"
+                    android:layout_width="45sp"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginLeft="105sp"
+                    android:text="-"
+                    android:textSize="30sp"
+                    android:textAlignment="center"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="__________________________________________________________"
+                android:layout_marginLeft="20sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Price"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:layout_marginLeft="23sp"
+                    android:layout_marginTop="8sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 1,30,990"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="23sp"
+                    android:layout_marginTop="44sp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:backgroundTint="@color/black"
+                    android:layout_marginLeft="210sp"
+                    android:layout_marginTop="16sp"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

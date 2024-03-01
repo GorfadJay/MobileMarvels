@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Login to your" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Account" />
+
+    <EditText
+        android:id="@+id/etEmail1"
+        android:layout_width="340sp"
+        android:layout_height="51sp"
+        android:layout_marginTop="25sp"
+        android:layout_gravity="center"
+        android:textSize="19sp"
+        android:drawableLeft="@drawable/profileimgg"
+        android:drawablePadding="13sp"
+        android:background="@drawable/edittext_border"
+        android:textColor="@color/textcolor"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/etPassword1"
+        android:layout_width="340sp"
+        android:inputType="textPassword"
+        android:layout_height="51sp"
+        android:layout_marginTop="25sp"
+        android:layout_gravity="center"
+        android:textSize="19sp"
+        android:drawableLeft="@drawable/profileimgg"
+        android:drawablePadding="13sp"
+        android:background="@drawable/edittext_border"
+        android:textColor="@color/textcolor"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="280sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:text="Sign in"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/registerNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_gravity="center"
+        android:text="Dont't have an account? Sign up"/>
+
+
+</LinearLayout>

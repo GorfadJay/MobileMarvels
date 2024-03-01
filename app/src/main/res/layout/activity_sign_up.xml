@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Create your" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Account" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="340sp"
+        android:layout_height="51sp"
+        android:layout_marginTop="65sp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/profileimgg"
+        android:drawablePadding="13sp"
+        android:textSize="19sp"
+        android:background="@drawable/edittext_border"
+        android:textColor="@color/textcolor"
+        android:hint="Name"/>
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="340sp"
+        android:layout_height="51sp"
+        android:layout_marginTop="25sp"
+        android:layout_gravity="center"
+        android:textSize="19sp"
+        android:drawableLeft="@drawable/profileimgg"
+        android:drawablePadding="13sp"
+        android:background="@drawable/edittext_border"
+        android:textColor="@color/textcolor"
+        android:hint="Mobile number"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="340sp"
+        android:layout_height="51sp"
+        android:layout_marginTop="25sp"
+        android:layout_gravity="center"
+        android:textSize="19sp"
+        android:drawableLeft="@drawable/profileimgg"
+        android:drawablePadding="13sp"
+        android:background="@drawable/edittext_border"
+        android:textColor="@color/textcolor"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="340sp"
+        android:inputType="textPassword"
+        android:layout_height="51sp"
+        android:layout_marginTop="25sp"
+        android:layout_gravity="center"
+        android:textSize="19sp"
+        android:drawableLeft="@drawable/profileimgg"
+        android:drawablePadding="13sp"
+        android:background="@drawable/edittext_border"
+        android:textColor="@color/textcolor"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="280sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:text="Sign up"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/loginNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:layout_gravity="center"
+        android:text="Already have account? Sign in"/>
+
+
+</LinearLayout>
